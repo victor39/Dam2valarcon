@@ -13,7 +13,6 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-  
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
 	<dependency>
@@ -27,13 +26,12 @@
 	    <artifactId>mysql-connector-java</artifactId>
 	    <version>8.0.25</version>
 	</dependency>
-    <dependency>
    
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
-      
     </dependency>
   </dependencies>
 </project>
