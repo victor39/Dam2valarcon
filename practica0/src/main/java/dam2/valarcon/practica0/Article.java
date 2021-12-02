@@ -2,10 +2,10 @@ package dam2.valarcon.practica0;
 
 public class Article {
 	
-	int id ;
-	String descripcio;
-	double preuCompra;
-	double preuVenda;
+	private int id ;
+	private String descripcio;
+	private double preuCompra;
+	private double preuVenda;
 	
 	
 	public Article(int id, String descripcio, double preuCompra, double preuVenda) {
@@ -39,7 +39,9 @@ public class Article {
 	public void setPreuVenda(double preuVenda) {
 		this.preuVenda = preuVenda;
 	}
-	
-	
-
+	@Override
+	public String toString() {
+		return "Article [id=" + id + ", descripcio=" + descripcio + ", preuCompra=" + preuCompra + ", preuVenda="
+				+ preuVenda + "]";
+	}
 }
