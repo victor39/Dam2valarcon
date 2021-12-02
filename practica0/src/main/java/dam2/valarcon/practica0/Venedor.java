@@ -3,8 +3,6 @@ package dam2.valarcon.practica0;
 public class Venedor extends Persona {
 
 	
-	
-	
 	public Venedor(String dni, String nom, String cognom1, String cognom2) {
 		super(dni, nom, cognom1, cognom2);
 	}

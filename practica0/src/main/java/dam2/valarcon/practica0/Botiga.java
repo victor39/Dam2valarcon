@@ -10,7 +10,6 @@ public class Botiga {
 	private ArrayList  <Venedor> personal  = new ArrayList <Venedor>();
 	
 	
-	
 	public Botiga(String identificador, String adreca, Magatzem magatzem) {
 		super();
 		this.identificador = identificador;
