@@ -12,7 +12,7 @@ public class Comanda  {
 	
 	public Comanda(int numComanda, dam2.valarcon.practica0.Client client, double total,
 			ArrayList<dam2.valarcon.practica0.LineaComanda> lineaComanda) {
-		super();
+		super();//??
 		this.numComanda = numComanda;
 		this.client = client;
 		this.total = total;
@@ -37,7 +37,7 @@ public class Comanda  {
 		this.total = total;
 	}
 	public ArrayList<LineaComanda> getLineaComanda() {
-		return lineaComanda;
+		return lineaComanda; //ho comentarem a classe
 	}
 	public void setLineaComanda(ArrayList<LineaComanda> lineaComanda) {
 		this.lineaComanda = lineaComanda;
@@ -45,7 +45,7 @@ public class Comanda  {
 	@Override
 	public String toString() {
 		return "comanda [numComanda=" + numComanda + ", client=" + client + ", total=" + total + ", lineaComanda="
-				+ lineaComanda + "]";
+				+ lineaComanda + "]"; //??
 	}
 	public boolean altaComanda () {
 		

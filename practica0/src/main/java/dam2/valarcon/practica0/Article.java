@@ -9,7 +9,7 @@ public class Article {
 	
 	
 	public Article(int id, String descripcio, double preuCompra, double preuVenda) {
-		super();
+		super();//??
 		this.id = id;
 		this.descripcio = descripcio;
 		this.preuCompra = preuCompra;
