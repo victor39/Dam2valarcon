@@ -7,7 +7,7 @@ public class Botiga {
 	private String identificador;
 	private String adreca;
 	private Magatzem magatzem;
-	private ArrayList  <Venedor> personal  = new ArrayList <Venedor>();
+	private ArrayList  <Venedor> personal ;
 	
 	
 	public Botiga(String identificador, String adreca, Magatzem magatzem) {
@@ -15,6 +15,7 @@ public class Botiga {
 		this.identificador = identificador;
 		this.adreca = adreca;
 		this.magatzem = magatzem;
+		this.personal = new ArrayList <Venedor>();
 	}
 	public String getIdentificador() {
 		return identificador;

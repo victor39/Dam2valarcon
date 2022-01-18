@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Tiquet {
 
 	private int id;
-	private ArrayList <LineaTicket> lineasticket = new ArrayList <LineaTicket>();
+	private ArrayList <LineaTicket> lineasticket ;
 	private double total;
 	
 	
@@ -13,6 +13,7 @@ public class Tiquet {
 		super();
 		this.id = id;
 		this.total = total;
+		this.lineasticket = new ArrayList <LineaTicket>();
 	}
 	public int getId() {
 		return id;
