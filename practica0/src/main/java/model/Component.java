@@ -1,4 +1,4 @@
-package dam2.valarcon.practica0;
+package model;
 
 import java.util.ArrayList;
 

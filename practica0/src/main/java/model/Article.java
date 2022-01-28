@@ -1,5 +1,4 @@
-package dam2.valarcon.practica0;
-
+package model;
 import java.sql.*;
 
 public class Article {
@@ -48,10 +47,10 @@ public class Article {
 		return "Article [id=" + id + ", descripcio=" + descripcio + ", preuCompra=" + preuCompra + ", preuVenda="
 				+ preuVenda + "]";
 	}
-	public void consultarArticles{
+	public void consultarArticles(){
 		
 		try {
-		Connection connexio = DriverManager.getConnection("jdbc:mysql://localhost:3306/projecte""root","");
+		Connection connexio = DriverManager.getConnection("jdbc:mysql://localhost:3306/projecte","root","");
 		// stm per aixi fer la consulta 
 		Statement stm = connexio.createStatement();
 		String sql="SELECT * FROM article ;";
@@ -72,13 +71,13 @@ public class Article {
 			e.printStackTrace();
 		}
 	}
-    public void insertArticles{
+    public void insertArticles(){
 		try {
-		Connection connexio = DriverManager.getConnection("jdbc:mysql://localhost:3306/projecte""root","");
+		Connection connexio = DriverManager.getConnection("jdbc:mysql://localhost:3306/projecte","root","");
 		// stm per aixi fer la consulta 
 		Statement stm = connexio.createStatement();
 		
-		}
+
 		
 		}catch (SQLException e) {
 			e.printStackTrace();

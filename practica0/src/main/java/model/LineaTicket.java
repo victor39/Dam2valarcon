@@ -1,4 +1,4 @@
-package dam2.valarcon.practica0;
+package model;
 
 
 public class LineaTicket {
@@ -10,7 +10,7 @@ public class LineaTicket {
 	private double preuUnitat;
 	
 	
-	public LineaTicket(int codiLinea, dam2.valarcon.practica0.Tiquet tiquet, Article article, int unitats,
+	public LineaTicket(int codiLinea, model.Tiquet tiquet, Article article, int unitats,
 			double preuUnitat) {
 		super();
 		this.codiLinea = codiLinea;
