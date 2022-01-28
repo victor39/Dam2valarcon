@@ -10,6 +10,8 @@ public class Article {
 	private double preuVenda;
 	
 	
+	
+	
 	public Article(int id, String descripcio, double preuCompra, double preuVenda) {
 		this.id = id;
 		this.descripcio = descripcio;
@@ -58,9 +60,24 @@ public class Article {
 		// podriem posar encomptes de sql , la consulta aqui dintre 
 		ResultSet rst = stm.executeQuery(sql);
 		
+		//recorre tot el resultat fins que termini amb el next
 		while(rst.next()) {
 			String descripcio = rst.getString("descripcio");
 			double preuCompra = rst.getDouble("preuCompra");
+			
+			System.out.println("");
+		}
+		
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+    public void insertArticles{
+		try {
+		Connection connexio = DriverManager.getConnection("jdbc:mysql://localhost:3306/projecte""root","");
+		// stm per aixi fer la consulta 
+		Statement stm = connexio.createStatement();
+		
 		}
 		
 		}catch (SQLException e) {
