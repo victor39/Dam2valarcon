@@ -1,5 +1,7 @@
 package dam2.valarcon.practica0;
 
+import java.sql.*;
+
 public class Article {
 	
 	private int id ;
@@ -9,7 +11,6 @@ public class Article {
 	
 	
 	public Article(int id, String descripcio, double preuCompra, double preuVenda) {
-		super();
 		this.id = id;
 		this.descripcio = descripcio;
 		this.preuCompra = preuCompra;
@@ -39,9 +40,32 @@ public class Article {
 	public void setPreuVenda(double preuVenda) {
 		this.preuVenda = preuVenda;
 	}
+	
 	@Override
 	public String toString() {
 		return "Article [id=" + id + ", descripcio=" + descripcio + ", preuCompra=" + preuCompra + ", preuVenda="
 				+ preuVenda + "]";
 	}
+	public void consultarArticles{
+		
+		try {
+		Connection connexio = DriverManager.getConnection("jdbc:mysql://localhost:3306/projecte""root","");
+		// stm per aixi fer la consulta 
+		Statement stm = connexio.createStatement();
+		String sql="SELECT * FROM article ;";
+		
+		// per guardar el resultat de la consulta 
+		// podriem posar encomptes de sql , la consulta aqui dintre 
+		ResultSet rst = stm.executeQuery(sql);
+		
+		while(rst.next()) {
+			String descripcio = rst.getString("descripcio");
+			double preuCompra = rst.getDouble("preuCompra");
+		}
+		
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
 }

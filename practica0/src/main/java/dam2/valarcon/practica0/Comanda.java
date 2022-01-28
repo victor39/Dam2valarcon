@@ -10,8 +10,13 @@ public class Comanda  {
 	private ArrayList <LineaComanda> liniesComanda;
 	
 	
+<<<<<<< HEAD
 	public Comanda(int numComanda, dam2.valarcon.practica0.Client client, double total) {
 		super();
+=======
+	public Comanda(int numComanda, dam2.valarcon.practica0.Client client, double total,
+			ArrayList<dam2.valarcon.practica0.LineaComanda> lineaComanda) {
+>>>>>>> branch 'master' of git@github.com:victor39/Dam2valarcon.git
 		this.numComanda = numComanda;
 		this.client = client;
 		this.total = total;
@@ -36,10 +41,23 @@ public class Comanda  {
 		this.total = total;
 	}
 	public ArrayList<LineaComanda> getLineaComanda() {
+<<<<<<< HEAD
 		return liniesComanda;
+=======
+		return lineaComanda; //ho comentarem a classe
+>>>>>>> branch 'master' of git@github.com:victor39/Dam2valarcon.git
 	}
 	public void setLineaComanda(ArrayList<LineaComanda> lineaComanda) {
+<<<<<<< HEAD
 		this.liniesComanda = lineaComanda;
+=======
+		this.lineaComanda = lineaComanda;
+	}
+	@Override
+	public String toString() {
+		return "comanda [numComanda=" + numComanda + ", client=" + client + ", total=" + total + ", lineaComanda="
+				+ lineaComanda + "]"; //??
+>>>>>>> branch 'master' of git@github.com:victor39/Dam2valarcon.git
 	}
 	public boolean altaComanda () {
 		

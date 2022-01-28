@@ -11,7 +11,7 @@ public class Botiga {
 	
 	
 	public Botiga(String identificador, String adreca, Magatzem magatzem) {
-		super();
+		super();//??
 		this.identificador = identificador;
 		this.adreca = adreca;
 		this.magatzem = magatzem;

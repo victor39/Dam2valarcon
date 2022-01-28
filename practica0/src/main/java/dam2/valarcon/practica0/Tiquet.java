@@ -10,8 +10,9 @@ public class Tiquet {
 	
 	
 	public Tiquet(int id , double total) {
+		//On inicies l'Array??
 		super();
-		this.id = id;
+		this.id = id;// ?? ho comentarem a classe
 		this.total = total;
 		this.lineasticket = new ArrayList <LineaTicket>();
 	}
